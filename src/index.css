@@ -140,25 +140,30 @@ header {
   }
 }
 
-.hero__details-container {
+.character_details-container {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   line-height: 1.6;
 }
 
-.hero__details-container img {
+.character_details-container img {
   flex: 1;
   max-width: 100%;
   max-height: 36rem;
 }
 
-.hero__details {
+.character_details {
   flex: 1;
   min-width: 35ch;
 }
 
-.hero__details li {
+.character_details li {
   list-style: disc;
   margin-left: 1.5rem;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 10rem;
 }

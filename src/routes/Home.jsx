@@ -11,27 +11,28 @@ import Card from "../components/Card";
 const IMAGE_SIZE = "portrait_fantastic";
 
 export default function Home() {
-    const [heroes, setHeroes] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
-    let cards;
+  let cards;
 
-    if(heroes){
-      cards = heroes.map((hero) => (
-        <Card 
-        name={hero.name}
-        id ={hero.id} 
-        key = {hero.id} 
-        thumbnail = {`${hero.thumbnail.path}/${IMAGE_SIZE}.${hero.thumbnail.extension}`}
-        />
-      ));
-    }
+  if(characters){
+    cards = characters.map((character) => (
+      <Card 
+        name={character.name}
+        id ={character.id} 
+        key = {character.id} 
+        thumbnail = {`${character.thumbnail.path}/${IMAGE_SIZE}.${character.thumbnail.extension}`}
+      />
+    ));
+  }
+
   return (
     <Container>
       <h1>Discover Marvel Characters</h1>
-      <SearchBar setter = {setHeroes}/>
+      <SearchBar setter = {setCharacters}/>
       <Grid>
         {cards ? cards : null}
       </Grid>
     </Container>
-  )
+  );
 }
