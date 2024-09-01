@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   console.log("this is happenin");
   // Your code here
 });
+
 root.render(
   <React.StrictMode>
     <App/>
