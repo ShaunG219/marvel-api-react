@@ -16,7 +16,7 @@ export default function CharacterDetails() {
     fetchSingleCharacter(id)
       .then((data) => setCharacter(data[0]))
       .catch((err) => console.error(err));
-  }, []);
+  }, [id]);
 
   if(!character) return;
 
@@ -25,7 +25,7 @@ export default function CharacterDetails() {
       <div className = "character_details-container">
         <img
           src = {`${character.thumbnail.path}.${character.thumbnail.extension}`}
-          alt = "character image full size"
+          alt = "character portrait full size"
         />
         <div className = "character_details">
           <h4>Name</h4>
