@@ -2,7 +2,7 @@
 <p>An interactive web application where users can search for their favorite Marvel characters and explore detailed information, including names, descriptions, and comic book appearances.</p>
 
 <h2>Demo</h2>
-<p>Check out the live demo here: <a href="https://discover-marvel-characters.netlify.app/">Discover Marvel Characters</a></p>
+<p>Check out the live demo here: <a href="https://dmch.netlify.app/">Discover Marvel Characters</a></p>
 
 
 <h2>Technologies:</h2>
